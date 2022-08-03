@@ -1,4 +1,4 @@
-This Project is basically my Muhammad's Portfolio Website with template taken from https://wwww.devcrud.com/ . I have edited this templated in accordance with my need .
+This Project is basically Muhammad's Portfolio Website with template taken from https://wwww.devcrud.com/ . I have edited this templated in accordance with my need .
 
 Credits :-
     Demo Images:
