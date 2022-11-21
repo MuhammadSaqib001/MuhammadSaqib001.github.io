@@ -183,6 +183,29 @@
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+    <?php
 
+	$servername = "localhost";
+	$username = "id17350912_buzdar";
+	$password = "Gen3dcM7jKl6e_^=";
+	$database = "id17350912_isxss";
+
+	// Create connection
+	$conn = mysqli_connect($servername, $username, $password, $database);
+
+	// Check connection
+	if (!$conn) {
+	    die("Connection failed: " . mysqli_connect_error());
+	}
+
+	$query = "SELECT * FROM comments";
+
+	$comments = mysqli_query($conn ,$query);
+	while($row = mysqli_fetch_assoc($comments))
+	{
+	    echo $row['comment_data'];
+	}
+
+    ?>
 </body>
 </html>
