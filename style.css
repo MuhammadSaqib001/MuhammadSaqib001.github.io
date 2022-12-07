@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab';
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* :root{
+    --bg-color: white;
+
+} */
+body{
+    background: whitesmoke;
+    color:black;
+}
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: .3s;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font: 'Roboto Slab';
+    color: black;
+    font-weight: 500;
+    padding: 10px 27px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height:2px;
+    background-color: brown;
+    bottom: -3px;
+    left:0;
+    transition: ease .40s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#imageofDb
+{
+    height: 35px;
+    width: 27px;
+}
+#menu-icon{
+    font-size: 50px;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.top-btn{
+    display: inline-block;
+    padding: 30px 50px;
+    background: transparent;
+    color: #191919;
+    border: 2px solid black;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 20;
+    font-weight: 500;
+    transition: ease .50s;
+    margin-left: 45%;
+}
+.top-btn:hover{
+    transform: scale(1.1);
+    background: black;
+    border: 2px solid black;
+    color: white;
+}
+.home{
+    margin-top: 7%;
+}
+.text{
+    height: 70%;
+    width: 50%;
+    font-size: larger;
+}
+#imageForAbout{
+    margin-top:-70% ;
+    margin-left: 120%;
+}
+
+#downloadWli{
+    margin-top: 10%;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
